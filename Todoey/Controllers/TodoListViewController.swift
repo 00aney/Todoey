@@ -16,7 +16,7 @@ class TodoListViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    print(dataFilePath)
+//    print(dataFilePath)
     
     loadItems()
   }
