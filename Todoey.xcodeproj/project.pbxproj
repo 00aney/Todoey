@@ -12,7 +12,9 @@
 		BD936BCE2086F302001BC536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD936BCC2086F302001BC536 /* Main.storyboard */; };
 		BD936BD02086F302001BC536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD936BCF2086F302001BC536 /* Assets.xcassets */; };
 		BD936BD32086F302001BC536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD936BD12086F302001BC536 /* LaunchScreen.storyboard */; };
-		BDEEE0FF2088180E00781F87 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEEE0FE2088180E00781F87 /* Item.swift */; };
+		BDC4F0DB208D8317006E1CD2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4F0DA208D8317006E1CD2 /* Item.swift */; };
+		BDC4F0DD208D831F006E1CD2 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4F0DC208D831F006E1CD2 /* Category.swift */; };
+		BDC4F0E1208D8534006E1CD2 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4F0E0208D8534006E1CD2 /* CategoryViewController.swift */; };
 		E35284A4F913058E3C59DC03 /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDA3450E5683819B1B8841A /* Pods_Todoey.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +28,9 @@
 		BD936BCF2086F302001BC536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD936BD22086F302001BC536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD936BD42086F302001BC536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDEEE0FE2088180E00781F87 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BDC4F0DA208D8317006E1CD2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BDC4F0DC208D831F006E1CD2 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BDC4F0E0208D8534006E1CD2 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		FFDA3450E5683819B1B8841A /* Pods_Todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				BD936BC82086F302001BC536 /* AppDelegate.swift */,
-				BDEEE0FB208817C000781F87 /* Data Model */,
 				BDEEE0FA208817BA00781F87 /* Controllers */,
+				BDEEE0FB208817C000781F87 /* Data Model */,
 				BDEEE0FC208817CE00781F87 /* Views */,
 				BDEEE0FD208817ED00781F87 /* Supporting Files */,
 				BD936BD42086F302001BC536 /* Info.plist */,
@@ -85,6 +89,7 @@
 		BDEEE0FA208817BA00781F87 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BDC4F0E0208D8534006E1CD2 /* CategoryViewController.swift */,
 				BD936BCA2086F302001BC536 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -93,7 +98,8 @@
 		BDEEE0FB208817C000781F87 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				BDEEE0FE2088180E00781F87 /* Item.swift */,
+				BDC4F0DC208D831F006E1CD2 /* Category.swift */,
+				BDC4F0DA208D8317006E1CD2 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -254,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC4F0E1208D8534006E1CD2 /* CategoryViewController.swift in Sources */,
 				BD936BCB2086F302001BC536 /* TodoListViewController.swift in Sources */,
-				BDEEE0FF2088180E00781F87 /* Item.swift in Sources */,
+				BDC4F0DB208D8317006E1CD2 /* Item.swift in Sources */,
 				BD936BC92086F302001BC536 /* AppDelegate.swift in Sources */,
+				BDC4F0DD208D831F006E1CD2 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
